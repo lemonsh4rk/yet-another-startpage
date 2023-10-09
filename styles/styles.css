@@ -2,58 +2,86 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: black;
 }
 
 body {
+  min-width: 100dvw;
+  min-height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
+  /*
+  background-color: #030615;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23252836' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
+  */
+  background-color: #000000;
 }
 
 li, a {
   text-decoration: none;
   list-style: none;
+  color: inherit;
 }
 
 .page {
-  width: 80%;
-  min-height: 100vh;
+  max-width: 50%;
+  max-height: 50%;
+  min-width: 50%;
+  min-height: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   align-content: center;
+  align-self: center;
 }
 
 .container  {
-  border: 1px black solid;
-  width: 100%;
+  max-width: 80%;
+  max-height: 80%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #000000;
+  border-radius: 40px;
+  flex: 1 1 auto;
 }
 
 .links {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  border: 1px solid black;
-  flex: 1;
   text-align: center;
+  padding-right: 100px;
+  padding-left: 100px;
+  flex: 1 1 auto;
+  align-self: flex-end;
+  gap: 25px;
 }
 
 .linktitle {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
 }
 
 .link {
-  font-size: 32px;
+  font-size: 18px;
+  color: white;
 }
 
 img {
-  height: 500px;
+  max-width: 50%;
   display: flex;
-  align-self: flex-start;
-  border: 1px solid black;
+  border-radius: 40px;
+  flex: 1 1 auto;
+}
+
+a:hover {
+  color: #b4c3dc;
+}
+
+li:first-of-type {
 }
